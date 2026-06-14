@@ -1,0 +1,239 @@
+/* Warna Dasar Website */
+:root {
+    --warna-dasar: #1f1f1f;
+    --warna-merah: #e10600;
+    --warna-putih: #f0f0f0;
+    --warna-abu: #cccccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--warna-dasar);
+    color: var(--warna-abu);
+}
+
+/* Layout Wrapper */
+.wrapper {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+header {
+    background-color: #000;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    border-bottom: 4px solid var(--warna-merah);
+    z-index: 999;
+}
+
+.judul-web {
+    color: var(--warna-putih);
+    font-style: italic;
+    display: inline-block;
+}
+
+.judul-web a {
+    text-decoration: none;
+    color: var(--warna-putih);
+}
+
+.menu-navigasi {
+    float: right;
+    margin-top: 5px;
+}
+
+.menu-navigasi ul {
+    list-style: none;
+}
+
+.menu-navigasi li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.menu-navigasi a {
+    color: var(--warna-putih);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.menu-navigasi a:hover {
+    background-color: var(--warna-merah);
+}
+
+.menu-navigasi a.aktif {
+    background-color: var(--warna-merah);
+}
+
+/* Section */
+section {
+    padding: 60px 0;
+    min-height: 80vh;
+}
+
+h2, h3 {
+    color: var(--warna-putih);
+    margin-bottom: 15px;
+}
+
+h3 {
+    border-left: 4px solid var(--warna-merah);
+    padding-left: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.intro {
+    font-size: 20px;
+    color: var(--warna-putih);
+}
+
+/* Tombol */
+.tombol {
+    display: inline-block;
+    background-color: var(--warna-merah);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.tombol:hover {
+    transform: scale(1.05);
+    background-color: #ff3333;
+}
+
+/* Formatting Tags */
+u {
+    color: var(--warna-putih);
+}
+
+strong {
+    color: var(--warna-putih);
+}
+
+i {
+    color: #888;
+}
+
+mark {
+    background-color: var(--warna-merah);
+    color: white;
+    padding: 2px 6px;
+}
+
+/* Card Info */
+.kotak-flex {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.kotak-info {
+    flex: 1;
+    min-width: 250px;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    transition: transform 0.3s;
+}
+
+.kotak-info:hover {
+    transform: translateY(-5px);
+    border-color: var(--warna-merah);
+}
+
+.kotak-info h4 {
+    color: var(--warna-merah);
+    margin-bottom: 10px;
+}
+
+.kotak-peringatan {
+    background-color: #2a2a2a;
+    padding: 15px;
+    margin-top: 30px;
+    border-left: 4px solid var(--warna-merah);
+}
+
+/* Tabel */
+.tabel-scroll {
+    overflow-x: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: #252525;
+}
+
+table {
+    width: 100%;
+    min-width: 500px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+th {
+    background-color: var(--warna-merah);
+    color: white;
+}
+
+tr {
+    background-color: #1f1f1f;
+}
+
+tr:hover {
+    background-color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #181818;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 20px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+    .menu-navigasi {
+        float: none;
+        margin-top: 10px;
+    }
+    
+    .menu-navigasi li {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    
+    .kotak-flex {
+        flex-direction: column;
+    }
+}
