@@ -1,4 +1,4 @@
-// Tunggu sampai seluruh struktur HTML selesai dimuat
+
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("formFanClub");
     const boxStatus = document.getElementById("boxStatus");
