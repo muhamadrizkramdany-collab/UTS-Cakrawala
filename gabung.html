@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dunia F1 - Gabung Fan Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="wrapper">
+            <h1 class="judul-web"><a href="index.html">Dunia F1</a></h1>
+            <nav class="menu-navigasi">
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="tim.html">Tim & Teknologi</a></li>
+                    <li><a href="klasemen.html">Klasemen</a></li>
+                    <li><a href="gabung.html" class="aktif">Gabung Fan Club</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="bagian-konten">
+            <div class="wrapper">
+                <h3><u>Pendaftaran Fan Club & Buletin F1</u></h3>
+                <p>Dapatkan update berita balapan tercepat langsung di inbox kamu dan bergabunglah dengan komunitas pencinta kecepatan!</p>
+                
+                <form id="formFanClub" style="background-color: #2a2a2a; padding: 25px; border-radius: 8px; margin-top: 20px; border: 1px solid #444;">
+                    
+                    <div style="margin-bottom: 15px;">
+                        <label for="nama" style="display: block; margin-bottom: 5px; color: #fff; font-weight: bold;">Nama Lengkap:</label>
+                        <input type="text" id="nama" id="nama" name="nama" required minlength="3" placeholder="Masukkan nama lengkap kamu" 
+                               style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #555; background-color: #1f1f1f; color: #fff;">
+                    </div>
+
+                    <div style="margin-bottom: 15px;">
+                        <label for="email" style="display: block; margin-bottom: 5px; color: #fff; font-weight: bold;">Alamat Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="contoh@email.com" 
+                               style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #555; background-color: #1f1f1f; color: #fff;">
+                    </div>
+
+                    <div style="margin-bottom: 15px;">
+                        <label for="timFavorit" style="display: block; margin-bottom: 5px; color: #fff; font-weight: bold;">Tim F1 Favorit:</label>
+                        <select id="timFavorit" name="timFavorit" required 
+                                style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #555; background-color: #1f1f1f; color: #fff;">
+                            <option value="">-- Pilih Tim Jagoan Kamu --</option>
+                            <option value="Red Bull Racing">Red Bull Racing</option>
+                            <option value="Ferrari">Ferrari</option>
+                            <option value="Mercedes">Mercedes</option>
+                            <option value="McLaren">McLaren</option>
+                            <option value="Aston Martin">Aston Martin</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="tombol" style="border: none; cursor: pointer; width: 100%;">Daftar Sekarang</button>
+                </form>
+
+                <div id="boxStatus" style="display: none; background-color: #181818; padding: 20px; border-left: 4px solid var(--warna-merah); margin-top: 25px; border-radius: 4px;">
+                    <h4 style="color: var(--warna-merah); margin-bottom: 10px;">🏎️ Status Keanggotaan Kamu:</h4>
+                    <p style="margin: 5px 0;"><strong>Nama:</strong> <span id="resNama" style="color: #fff;"></span></p>
+                    <p style="margin: 5px 0;"><strong>Email:</strong> <span id="resEmail" style="color: #fff;"></span></p>
+                    <p style="margin: 5px 0;"><strong>Tim Favorit:</strong> <span id="resTim" style="color: #fff;"></span></p>
+                    <button id="btnHapus" style="background-color: #333; color: #ccc; border: 1px solid #555; padding: 5px 10px; margin-top: 10px; border-radius: 4px; cursor: pointer;">Hapus Data</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <p>&copy; 2026 Dunia F1</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

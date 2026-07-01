@@ -237,3 +237,8 @@ footer {
         flex-direction: column;
     }
 }
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--warna-merah) !important;
+    box-shadow: 0 0 5px rgba(225, 6, 0, 0.5);
+}
