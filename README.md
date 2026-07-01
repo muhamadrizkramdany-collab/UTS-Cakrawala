@@ -6,13 +6,13 @@ Website ini dibuat untuk memenuhi tugas UTS mata kuliah Web Client Development d
 
 ## 📌 Tentang Website
 
-Website ini berisi informasi tentang dunia Formula 1, mulai dari pengenalan balapan F1, tim-tim terkenal, teknologi yang digunakan, hingga klasemen konstruktor sementara.
+Website ini berisi informasi tentang dunia Formula 1, mulai dari pengenalan balapan F1, tim-tim terkenal, teknologi yang digunakan, hingga klasemen konstruktor sementara, dan pendaftaran fanclub.
 
 ---
 
 ## ⚙️ Fitur / Specs
 
-- **Multi-page Website** (Terdiri dari 3 halaman berbeda)
+- **Multi-page Website** (Terdiri dari 4 halaman berbeda)
 - **Website Responsif** (Bisa dibuka di HP dan Laptop)
 - **Navigasi Menu** untuk berpindah halaman
 - **Desain Modern** dengan warna khas F1 (Merah #e10600 dan Hitam #1f1f1f)
